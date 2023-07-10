@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>其他实现 | chenglun17 blog</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="学习学习在学习">
+    
+    <link rel="preload" href="/assets/css/0.styles.6442aeab.css" as="style"><link rel="preload" href="/assets/js/app.b68f363e.js" as="script"><link rel="preload" href="/assets/js/3.eca41826.js" as="script"><link rel="preload" href="/assets/js/150.c7b13e96.js" as="script"><link rel="prefetch" href="/assets/js/10.4b103b6e.js"><link rel="prefetch" href="/assets/js/100.297baafd.js"><link rel="prefetch" href="/assets/js/101.e9b52ec7.js"><link rel="prefetch" href="/assets/js/102.145a9e5b.js"><link rel="prefetch" href="/assets/js/103.44d132d5.js"><link rel="prefetch" href="/assets/js/104.4b1215d9.js"><link rel="prefetch" href="/assets/js/105.a10c573e.js"><link rel="prefetch" href="/assets/js/106.b61a77fc.js"><link rel="prefetch" href="/assets/js/107.f548f699.js"><link rel="prefetch" href="/assets/js/108.47e1d708.js"><link rel="prefetch" href="/assets/js/109.996cb14e.js"><link rel="prefetch" href="/assets/js/11.2cab54ca.js"><link rel="prefetch" href="/assets/js/110.e2aa0116.js"><link rel="prefetch" href="/assets/js/111.6676b00d.js"><link rel="prefetch" href="/assets/js/112.1266565c.js"><link rel="prefetch" href="/assets/js/113.2fa1d2f2.js"><link rel="prefetch" href="/assets/js/114.1d1795f6.js"><link rel="prefetch" href="/assets/js/115.e3aa9733.js"><link rel="prefetch" href="/assets/js/116.d87e382f.js"><link rel="prefetch" href="/assets/js/117.8954eee5.js"><link rel="prefetch" href="/assets/js/118.daa284c8.js"><link rel="prefetch" href="/assets/js/119.ee75fa79.js"><link rel="prefetch" href="/assets/js/12.892bf515.js"><link rel="prefetch" href="/assets/js/120.313bbe4c.js"><link rel="prefetch" href="/assets/js/121.45f94620.js"><link rel="prefetch" href="/assets/js/122.33f03428.js"><link rel="prefetch" href="/assets/js/123.ea9d3bc3.js"><link rel="prefetch" href="/assets/js/124.8ae7149a.js"><link rel="prefetch" href="/assets/js/125.4877cd60.js"><link rel="prefetch" href="/assets/js/126.57c52ce7.js"><link rel="prefetch" href="/assets/js/127.dac8e1c1.js"><link rel="prefetch" href="/assets/js/128.4915e98d.js"><link rel="prefetch" href="/assets/js/129.d3bb34d7.js"><link rel="prefetch" href="/assets/js/13.6dba7a6e.js"><link rel="prefetch" href="/assets/js/130.a26bed75.js"><link rel="prefetch" href="/assets/js/131.48ba3b80.js"><link rel="prefetch" href="/assets/js/132.467dc809.js"><link rel="prefetch" href="/assets/js/133.df49e861.js"><link rel="prefetch" href="/assets/js/134.82c6e33a.js"><link rel="prefetch" href="/assets/js/135.759f8cb7.js"><link rel="prefetch" href="/assets/js/136.b375954a.js"><link rel="prefetch" href="/assets/js/137.2c20fb70.js"><link rel="prefetch" href="/assets/js/138.b01c0a9f.js"><link rel="prefetch" href="/assets/js/139.fa78bf9f.js"><link rel="prefetch" href="/assets/js/14.acb5a7c4.js"><link rel="prefetch" href="/assets/js/140.113a9a45.js"><link rel="prefetch" href="/assets/js/141.cd7cbf9f.js"><link rel="prefetch" href="/assets/js/142.441a4359.js"><link rel="prefetch" href="/assets/js/143.e931e9cb.js"><link rel="prefetch" href="/assets/js/144.400e290a.js"><link rel="prefetch" href="/assets/js/145.00c9c11c.js"><link rel="prefetch" href="/assets/js/146.98920386.js"><link rel="prefetch" href="/assets/js/147.d8b20b96.js"><link rel="prefetch" href="/assets/js/148.5a980551.js"><link rel="prefetch" href="/assets/js/149.4ccc8058.js"><link rel="prefetch" href="/assets/js/15.1e2f3804.js"><link rel="prefetch" href="/assets/js/151.c217d536.js"><link rel="prefetch" href="/assets/js/152.8c5d7f64.js"><link rel="prefetch" href="/assets/js/153.c6c334ab.js"><link rel="prefetch" href="/assets/js/154.a84c3117.js"><link rel="prefetch" href="/assets/js/155.f7fb14d2.js"><link rel="prefetch" href="/assets/js/156.d2fb9e4e.js"><link rel="prefetch" href="/assets/js/157.d94b4631.js"><link rel="prefetch" href="/assets/js/16.b0f94693.js"><link rel="prefetch" href="/assets/js/17.bb61da7a.js"><link rel="prefetch" href="/assets/js/18.beefe7df.js"><link rel="prefetch" href="/assets/js/19.7d57507c.js"><link rel="prefetch" href="/assets/js/2.0c28e73f.js"><link rel="prefetch" href="/assets/js/20.9f00f5f4.js"><link rel="prefetch" href="/assets/js/21.1bc50508.js"><link rel="prefetch" href="/assets/js/22.b575eafe.js"><link rel="prefetch" href="/assets/js/23.68b4716e.js"><link rel="prefetch" href="/assets/js/24.62918a19.js"><link rel="prefetch" href="/assets/js/25.2d9ccbb2.js"><link rel="prefetch" href="/assets/js/26.ad9c156c.js"><link rel="prefetch" href="/assets/js/27.b6393013.js"><link rel="prefetch" href="/assets/js/28.4df63128.js"><link rel="prefetch" href="/assets/js/29.20717133.js"><link rel="prefetch" href="/assets/js/30.369f6780.js"><link rel="prefetch" href="/assets/js/31.9b6be83b.js"><link rel="prefetch" href="/assets/js/32.d005a3be.js"><link rel="prefetch" href="/assets/js/33.edd4d97b.js"><link rel="prefetch" href="/assets/js/34.7140266d.js"><link rel="prefetch" href="/assets/js/35.19638f1b.js"><link rel="prefetch" href="/assets/js/36.07227d82.js"><link rel="prefetch" href="/assets/js/37.dcc06bcf.js"><link rel="prefetch" href="/assets/js/38.9fb34c80.js"><link rel="prefetch" href="/assets/js/39.e5353297.js"><link rel="prefetch" href="/assets/js/4.8baedf08.js"><link rel="prefetch" href="/assets/js/40.fa0fbc91.js"><link rel="prefetch" href="/assets/js/41.343371a0.js"><link rel="prefetch" href="/assets/js/42.0df4b330.js"><link rel="prefetch" href="/assets/js/43.974d3f5b.js"><link rel="prefetch" href="/assets/js/44.93e9dafd.js"><link rel="prefetch" href="/assets/js/45.6dc5b16c.js"><link rel="prefetch" href="/assets/js/46.9579af6e.js"><link rel="prefetch" href="/assets/js/47.0a42f3d4.js"><link rel="prefetch" href="/assets/js/48.2e3e3fbd.js"><link rel="prefetch" href="/assets/js/49.776e99ec.js"><link rel="prefetch" href="/assets/js/5.8440639d.js"><link rel="prefetch" href="/assets/js/50.f4aaa548.js"><link rel="prefetch" href="/assets/js/51.3e66437a.js"><link rel="prefetch" href="/assets/js/52.144e3aa7.js"><link rel="prefetch" href="/assets/js/53.d187b8bf.js"><link rel="prefetch" href="/assets/js/54.3d5998b1.js"><link rel="prefetch" href="/assets/js/55.d3c3cf18.js"><link rel="prefetch" href="/assets/js/56.810420c9.js"><link rel="prefetch" href="/assets/js/57.ba27630d.js"><link rel="prefetch" href="/assets/js/58.ef7e0e5f.js"><link rel="prefetch" href="/assets/js/59.1ecbb584.js"><link rel="prefetch" href="/assets/js/6.8f838d3c.js"><link rel="prefetch" href="/assets/js/60.c03221a6.js"><link rel="prefetch" href="/assets/js/61.0c1b7f8b.js"><link rel="prefetch" href="/assets/js/62.bc72b066.js"><link rel="prefetch" href="/assets/js/63.870ed138.js"><link rel="prefetch" href="/assets/js/64.a643eac9.js"><link rel="prefetch" href="/assets/js/65.65992e0a.js"><link rel="prefetch" href="/assets/js/66.21c3476a.js"><link rel="prefetch" href="/assets/js/67.00ecd1b2.js"><link rel="prefetch" href="/assets/js/68.e2193fda.js"><link rel="prefetch" href="/assets/js/69.b25922fd.js"><link rel="prefetch" href="/assets/js/7.a4e5f693.js"><link rel="prefetch" href="/assets/js/70.7df33e8b.js"><link rel="prefetch" href="/assets/js/71.4fb66dab.js"><link rel="prefetch" href="/assets/js/72.7c3496ca.js"><link rel="prefetch" href="/assets/js/73.f8b12565.js"><link rel="prefetch" href="/assets/js/74.5593515c.js"><link rel="prefetch" href="/assets/js/75.3eae286e.js"><link rel="prefetch" href="/assets/js/76.fb25ef39.js"><link rel="prefetch" href="/assets/js/77.813550b2.js"><link rel="prefetch" href="/assets/js/78.51eb779c.js"><link rel="prefetch" href="/assets/js/79.28e4c211.js"><link rel="prefetch" href="/assets/js/8.a1d1eaae.js"><link rel="prefetch" href="/assets/js/80.0a1fb12c.js"><link rel="prefetch" href="/assets/js/81.e43c02ad.js"><link rel="prefetch" href="/assets/js/82.8a898019.js"><link rel="prefetch" href="/assets/js/83.62824370.js"><link rel="prefetch" href="/assets/js/84.ddd27bab.js"><link rel="prefetch" href="/assets/js/85.ea498587.js"><link rel="prefetch" href="/assets/js/86.30c2820e.js"><link rel="prefetch" href="/assets/js/87.32c6b5a6.js"><link rel="prefetch" href="/assets/js/88.9362530e.js"><link rel="prefetch" href="/assets/js/89.422471a1.js"><link rel="prefetch" href="/assets/js/9.63cc4b00.js"><link rel="prefetch" href="/assets/js/90.4c3c1a89.js"><link rel="prefetch" href="/assets/js/91.6f4683a0.js"><link rel="prefetch" href="/assets/js/92.2bc430f5.js"><link rel="prefetch" href="/assets/js/93.fb8b7075.js"><link rel="prefetch" href="/assets/js/94.68644683.js"><link rel="prefetch" href="/assets/js/95.46d879ff.js"><link rel="prefetch" href="/assets/js/96.dd948d11.js"><link rel="prefetch" href="/assets/js/97.88aef29a.js"><link rel="prefetch" href="/assets/js/98.f101fa6e.js"><link rel="prefetch" href="/assets/js/99.149731a7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6442aeab.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/avatar.png" alt="chenglun17 blog" class="logo"> <span class="site-name can-hide">chenglun17 blog </span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  快速了解
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cs/DS/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/cs/OS/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/cs/CN/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/cs/CO/" class="nav-link">
+  计算机组成原理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/troika/html_css_study/" class="nav-link">
+  HTML/CSS
+</a></li><li class="dropdown-item"><!----> <a href="/troika/js_study/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/troika/WebAPI_Interface/" class="nav-link">
+  Web API 接口
+</a></li><li class="dropdown-item"><!----> <a href="/troika/various_functions/" class="nav-link">
+  各种功能
+</a></li><li class="dropdown-item"><!----> <a href="/troika/promise_study/" class="nav-link">
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/troika/ajax_study/" class="nav-link">
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/troika/axios_study/" class="nav-link">
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/troika/TypeScript_Study/" class="nav-link">
+  TypeScript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web前端" class="dropdown-title"><span class="title">Web前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web前端" class="mobile-dropdown-title"><span class="title">Web前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frame/vue_study/" class="nav-link">
+  Vue2.x
+</a></li><li class="dropdown-item"><!----> <a href="/frame/vue3_study/" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/frame/VueInterview/" class="nav-link">
+  Vue面试相关
+</a></li><li class="dropdown-item"><!----> <a href="/frame/react_study/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frame/Bootstrap_study/" class="nav-link">
+  Bootstrap
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他学习" class="dropdown-title"><span class="title">其他学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他学习" class="mobile-dropdown-title"><span class="title">其他学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/others/nodejs_study/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/others/webpack_study/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/others/babel_study/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-item"><!----> <a href="/others/git_study/" class="nav-link">
+  Git/Tortoisegit
+</a></li><li class="dropdown-item"><!----> <a href="/others/regex_study/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="移动端" class="dropdown-title"><span class="title">移动端</span> <span class="arrow down"></span></button> <button type="button" aria-label="移动端" class="mobile-dropdown-title"><span class="title">移动端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mobile/miniprogram_study/" class="nav-link">
+  小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/uni-app_study/" class="nav-link">
+  uni-app
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java后端" class="dropdown-title"><span class="title">Java后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java后端" class="mobile-dropdown-title"><span class="title">Java后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/java_core/" class="nav-link">
+  Java核心基础
+</a></li><li class="dropdown-item"><!----> <a href="/java/sql_study/" class="nav-link">
+  SQL/MySQL
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/chenglun17" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  快速了解
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cs/DS/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/cs/OS/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/cs/CN/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/cs/CO/" class="nav-link">
+  计算机组成原理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/troika/html_css_study/" class="nav-link">
+  HTML/CSS
+</a></li><li class="dropdown-item"><!----> <a href="/troika/js_study/" class="nav-link router-link-active">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/troika/WebAPI_Interface/" class="nav-link">
+  Web API 接口
+</a></li><li class="dropdown-item"><!----> <a href="/troika/various_functions/" class="nav-link">
+  各种功能
+</a></li><li class="dropdown-item"><!----> <a href="/troika/promise_study/" class="nav-link">
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/troika/ajax_study/" class="nav-link">
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/troika/axios_study/" class="nav-link">
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/troika/TypeScript_Study/" class="nav-link">
+  TypeScript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web前端" class="dropdown-title"><span class="title">Web前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web前端" class="mobile-dropdown-title"><span class="title">Web前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frame/vue_study/" class="nav-link">
+  Vue2.x
+</a></li><li class="dropdown-item"><!----> <a href="/frame/vue3_study/" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/frame/VueInterview/" class="nav-link">
+  Vue面试相关
+</a></li><li class="dropdown-item"><!----> <a href="/frame/react_study/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frame/Bootstrap_study/" class="nav-link">
+  Bootstrap
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他学习" class="dropdown-title"><span class="title">其他学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他学习" class="mobile-dropdown-title"><span class="title">其他学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/others/nodejs_study/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/others/webpack_study/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/others/babel_study/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-item"><!----> <a href="/others/git_study/" class="nav-link">
+  Git/Tortoisegit
+</a></li><li class="dropdown-item"><!----> <a href="/others/regex_study/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="移动端" class="dropdown-title"><span class="title">移动端</span> <span class="arrow down"></span></button> <button type="button" aria-label="移动端" class="mobile-dropdown-title"><span class="title">移动端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mobile/miniprogram_study/" class="nav-link">
+  小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/uni-app_study/" class="nav-link">
+  uni-app
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java后端" class="dropdown-title"><span class="title">Java后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java后端" class="mobile-dropdown-title"><span class="title">Java后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/java_core/" class="nav-link">
+  Java核心基础
+</a></li><li class="dropdown-item"><!----> <a href="/java/sql_study/" class="nav-link">
+  SQL/MySQL
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/chenglun17" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/troika/html_css_study/" class="sidebar-heading clickable"><span>HTML/CSS 学习</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/troika/js_study/" class="sidebar-heading clickable router-link-active open"><span>JavaScript 学习</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/troika/js_study/JS_Base.html" class="sidebar-link">JavaScript 基础</a></li><li><a href="/troika/js_study/JS_Built-inObject.html" class="sidebar-link">JavaScript 内置对象</a></li><li><a href="/troika/js_study/JS_Senior.html" class="sidebar-link">JavaScript 进阶</a></li><li><a href="/troika/js_study/JS_WebAPI.html" class="sidebar-link">JavaScript Web API</a></li><li><a href="/troika/js_study/ES6.html" class="sidebar-link">ES6+ 新增</a></li><li><a href="/troika/js_study/Others.html" aria-current="page" class="active sidebar-link">其他实现</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/troika/js_study/Others.html#控制请求的并发量" class="sidebar-link">控制请求的并发量</a></li></ul></li><li><a href="/troika/js_study/OtherFunctions.html" class="sidebar-link">其他功能</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/troika/WebAPI_Interface/" class="sidebar-heading clickable"><span>Web API 接口</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/troika/various_functions/" class="sidebar-heading clickable"><span>各种功能实现</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/troika/promise_study/" class="sidebar-heading clickable"><span>Promise 学习</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/troika/ajax_study/" class="sidebar-heading clickable"><span>Ajax 学习</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/troika/axios_study/" class="sidebar-heading clickable"><span>Axios 学习</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/troika/TypeScript_Study/" class="sidebar-heading clickable"><span>TypeScript 学习</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="其他实现"><a href="#其他实现" class="header-anchor">#</a> 其他实现</h1> <h2 id="控制请求的并发量"><a href="#控制请求的并发量" class="header-anchor">#</a> 控制请求的并发量</h2> <p><strong>需求：</strong> 现在有一组请求，想让其依次每次执行一定的请求数量<a href="https://so.csdn.net/so/search?q=%E5%B9%B6%E5%8F%91&amp;spm=1001.2101.3001.7020" target="_blank" rel="noopener noreferrer">并发<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>请求，直到请求到最后一个请求，直至完成所有请求，而且要求请求返回的结果顺序和请求时的顺序保持一致。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * 并发请求
+ * @param {string[]} urls 待请求的url数组
+ * @param {number} maxNum 最大并发请求数
+ */</span>
+
+<span class="token comment">// fetch采用Promise方式来处理数据,比XMLHttpRequest更加简单易用</span>
+<span class="token keyword">function</span> <span class="token function">concurRequest</span><span class="token punctuation">(</span><span class="token parameter">urls<span class="token punctuation">,</span> maxNum</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>urls<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 先考虑边界问题</span>
+            <span class="token function">resolve</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">const</span> results <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token comment">//存储请求结果并返回</span>
+        <span class="token keyword">let</span> index <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment">// 下一个请求的 url 下标</span>
+        <span class="token keyword">let</span> count <span class="token operator">=</span> <span class="token number">0</span> <span class="token comment">// 当前请求完成的数量</span>
+
+        <span class="token comment">// 发送请求</span>
+        <span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>index <span class="token operator">===</span> urls<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token keyword">return</span>
+
+            <span class="token keyword">const</span> i <span class="token operator">=</span> index<span class="token punctuation">;</span>
+            <span class="token keyword">const</span> url <span class="token operator">=</span> urls<span class="token punctuation">[</span>index<span class="token punctuation">]</span>
+            index<span class="token operator">++</span>
+
+            <span class="token keyword">try</span> <span class="token punctuation">{</span>
+                <span class="token keyword">const</span> resp <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">fetch</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span>
+                <span class="token comment">// 将resp加入到results</span>
+                results<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> resp   <span class="token comment">// 不能用push，因为这样就会出现异步完成优先写入不符合要求</span>
+            <span class="token punctuation">}</span> <span class="token keyword">catch</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 将error加入到results</span>
+                results<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> error
+            <span class="token punctuation">}</span> <span class="token keyword">finally</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 判断是否所有的请求都已经完成</span>
+                count<span class="token operator">++</span>
+                <span class="token keyword">if</span> <span class="token punctuation">(</span>count <span class="token operator">===</span> urls<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                    <span class="token function">resolve</span><span class="token punctuation">(</span>results<span class="token punctuation">)</span>
+                <span class="token punctuation">}</span>
+                <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+
+            <span class="token comment">// console.log(resp);</span>
+            <span class="token comment">// console.log(url);</span>
+            <span class="token comment">// console.log(results);</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 取最大并发数和请求url数组长度两者中最小的值作为并发请求数</span>
+        <span class="token keyword">const</span> times <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span>maxNum<span class="token punctuation">,</span> urls<span class="token punctuation">.</span>length<span class="token punctuation">)</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> times<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token function">request</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>测试</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>X-UA-Compatible<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>IE=edge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>并发请求<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>./index.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+        <span class="token keyword">const</span> urls <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            urls<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://api.uixsj.cn/hitokoto/get?tyoe=social/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>i<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 并发请求数为20</span>
+        <span class="token function">concurRequest</span><span class="token punctuation">(</span>urls<span class="token punctuation">,</span> <span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">resp</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>resp<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    </span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><p><a href="https://blog.csdn.net/DLGDark/article/details/128339268" target="_blank" rel="noopener noreferrer">参考文章<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>、<a href="https://blog.csdn.net/m0_46672781/article/details/127647557" target="_blank" rel="noopener noreferrer">参考文章2<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">5/28/2023, 10:41:22 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/troika/js_study/ES6.html" class="prev">
+        ES6+ 新增
+      </a></span> <span class="next"><a href="/troika/js_study/OtherFunctions.html">
+        其他功能
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.b68f363e.js" defer></script><script src="/assets/js/3.eca41826.js" defer></script><script src="/assets/js/150.c7b13e96.js" defer></script>
+  </body>
+</html>

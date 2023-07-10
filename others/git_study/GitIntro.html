@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一、Git基础概念 | chenglun17 blog</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="/images/favicon.ico">
+    <meta name="description" content="学习学习在学习">
+    
+    <link rel="preload" href="/assets/css/0.styles.6442aeab.css" as="style"><link rel="preload" href="/assets/js/app.b68f363e.js" as="script"><link rel="preload" href="/assets/js/3.eca41826.js" as="script"><link rel="preload" href="/assets/js/109.996cb14e.js" as="script"><link rel="prefetch" href="/assets/js/10.4b103b6e.js"><link rel="prefetch" href="/assets/js/100.297baafd.js"><link rel="prefetch" href="/assets/js/101.e9b52ec7.js"><link rel="prefetch" href="/assets/js/102.145a9e5b.js"><link rel="prefetch" href="/assets/js/103.44d132d5.js"><link rel="prefetch" href="/assets/js/104.4b1215d9.js"><link rel="prefetch" href="/assets/js/105.a10c573e.js"><link rel="prefetch" href="/assets/js/106.b61a77fc.js"><link rel="prefetch" href="/assets/js/107.f548f699.js"><link rel="prefetch" href="/assets/js/108.47e1d708.js"><link rel="prefetch" href="/assets/js/11.2cab54ca.js"><link rel="prefetch" href="/assets/js/110.e2aa0116.js"><link rel="prefetch" href="/assets/js/111.6676b00d.js"><link rel="prefetch" href="/assets/js/112.1266565c.js"><link rel="prefetch" href="/assets/js/113.2fa1d2f2.js"><link rel="prefetch" href="/assets/js/114.1d1795f6.js"><link rel="prefetch" href="/assets/js/115.e3aa9733.js"><link rel="prefetch" href="/assets/js/116.d87e382f.js"><link rel="prefetch" href="/assets/js/117.8954eee5.js"><link rel="prefetch" href="/assets/js/118.daa284c8.js"><link rel="prefetch" href="/assets/js/119.ee75fa79.js"><link rel="prefetch" href="/assets/js/12.892bf515.js"><link rel="prefetch" href="/assets/js/120.313bbe4c.js"><link rel="prefetch" href="/assets/js/121.45f94620.js"><link rel="prefetch" href="/assets/js/122.33f03428.js"><link rel="prefetch" href="/assets/js/123.ea9d3bc3.js"><link rel="prefetch" href="/assets/js/124.8ae7149a.js"><link rel="prefetch" href="/assets/js/125.4877cd60.js"><link rel="prefetch" href="/assets/js/126.57c52ce7.js"><link rel="prefetch" href="/assets/js/127.dac8e1c1.js"><link rel="prefetch" href="/assets/js/128.4915e98d.js"><link rel="prefetch" href="/assets/js/129.d3bb34d7.js"><link rel="prefetch" href="/assets/js/13.6dba7a6e.js"><link rel="prefetch" href="/assets/js/130.a26bed75.js"><link rel="prefetch" href="/assets/js/131.48ba3b80.js"><link rel="prefetch" href="/assets/js/132.467dc809.js"><link rel="prefetch" href="/assets/js/133.df49e861.js"><link rel="prefetch" href="/assets/js/134.82c6e33a.js"><link rel="prefetch" href="/assets/js/135.759f8cb7.js"><link rel="prefetch" href="/assets/js/136.b375954a.js"><link rel="prefetch" href="/assets/js/137.2c20fb70.js"><link rel="prefetch" href="/assets/js/138.b01c0a9f.js"><link rel="prefetch" href="/assets/js/139.fa78bf9f.js"><link rel="prefetch" href="/assets/js/14.acb5a7c4.js"><link rel="prefetch" href="/assets/js/140.113a9a45.js"><link rel="prefetch" href="/assets/js/141.cd7cbf9f.js"><link rel="prefetch" href="/assets/js/142.441a4359.js"><link rel="prefetch" href="/assets/js/143.e931e9cb.js"><link rel="prefetch" href="/assets/js/144.400e290a.js"><link rel="prefetch" href="/assets/js/145.00c9c11c.js"><link rel="prefetch" href="/assets/js/146.98920386.js"><link rel="prefetch" href="/assets/js/147.d8b20b96.js"><link rel="prefetch" href="/assets/js/148.5a980551.js"><link rel="prefetch" href="/assets/js/149.4ccc8058.js"><link rel="prefetch" href="/assets/js/15.1e2f3804.js"><link rel="prefetch" href="/assets/js/150.c7b13e96.js"><link rel="prefetch" href="/assets/js/151.c217d536.js"><link rel="prefetch" href="/assets/js/152.8c5d7f64.js"><link rel="prefetch" href="/assets/js/153.c6c334ab.js"><link rel="prefetch" href="/assets/js/154.a84c3117.js"><link rel="prefetch" href="/assets/js/155.f7fb14d2.js"><link rel="prefetch" href="/assets/js/156.d2fb9e4e.js"><link rel="prefetch" href="/assets/js/157.d94b4631.js"><link rel="prefetch" href="/assets/js/16.b0f94693.js"><link rel="prefetch" href="/assets/js/17.bb61da7a.js"><link rel="prefetch" href="/assets/js/18.beefe7df.js"><link rel="prefetch" href="/assets/js/19.7d57507c.js"><link rel="prefetch" href="/assets/js/2.0c28e73f.js"><link rel="prefetch" href="/assets/js/20.9f00f5f4.js"><link rel="prefetch" href="/assets/js/21.1bc50508.js"><link rel="prefetch" href="/assets/js/22.b575eafe.js"><link rel="prefetch" href="/assets/js/23.68b4716e.js"><link rel="prefetch" href="/assets/js/24.62918a19.js"><link rel="prefetch" href="/assets/js/25.2d9ccbb2.js"><link rel="prefetch" href="/assets/js/26.ad9c156c.js"><link rel="prefetch" href="/assets/js/27.b6393013.js"><link rel="prefetch" href="/assets/js/28.4df63128.js"><link rel="prefetch" href="/assets/js/29.20717133.js"><link rel="prefetch" href="/assets/js/30.369f6780.js"><link rel="prefetch" href="/assets/js/31.9b6be83b.js"><link rel="prefetch" href="/assets/js/32.d005a3be.js"><link rel="prefetch" href="/assets/js/33.edd4d97b.js"><link rel="prefetch" href="/assets/js/34.7140266d.js"><link rel="prefetch" href="/assets/js/35.19638f1b.js"><link rel="prefetch" href="/assets/js/36.07227d82.js"><link rel="prefetch" href="/assets/js/37.dcc06bcf.js"><link rel="prefetch" href="/assets/js/38.9fb34c80.js"><link rel="prefetch" href="/assets/js/39.e5353297.js"><link rel="prefetch" href="/assets/js/4.8baedf08.js"><link rel="prefetch" href="/assets/js/40.fa0fbc91.js"><link rel="prefetch" href="/assets/js/41.343371a0.js"><link rel="prefetch" href="/assets/js/42.0df4b330.js"><link rel="prefetch" href="/assets/js/43.974d3f5b.js"><link rel="prefetch" href="/assets/js/44.93e9dafd.js"><link rel="prefetch" href="/assets/js/45.6dc5b16c.js"><link rel="prefetch" href="/assets/js/46.9579af6e.js"><link rel="prefetch" href="/assets/js/47.0a42f3d4.js"><link rel="prefetch" href="/assets/js/48.2e3e3fbd.js"><link rel="prefetch" href="/assets/js/49.776e99ec.js"><link rel="prefetch" href="/assets/js/5.8440639d.js"><link rel="prefetch" href="/assets/js/50.f4aaa548.js"><link rel="prefetch" href="/assets/js/51.3e66437a.js"><link rel="prefetch" href="/assets/js/52.144e3aa7.js"><link rel="prefetch" href="/assets/js/53.d187b8bf.js"><link rel="prefetch" href="/assets/js/54.3d5998b1.js"><link rel="prefetch" href="/assets/js/55.d3c3cf18.js"><link rel="prefetch" href="/assets/js/56.810420c9.js"><link rel="prefetch" href="/assets/js/57.ba27630d.js"><link rel="prefetch" href="/assets/js/58.ef7e0e5f.js"><link rel="prefetch" href="/assets/js/59.1ecbb584.js"><link rel="prefetch" href="/assets/js/6.8f838d3c.js"><link rel="prefetch" href="/assets/js/60.c03221a6.js"><link rel="prefetch" href="/assets/js/61.0c1b7f8b.js"><link rel="prefetch" href="/assets/js/62.bc72b066.js"><link rel="prefetch" href="/assets/js/63.870ed138.js"><link rel="prefetch" href="/assets/js/64.a643eac9.js"><link rel="prefetch" href="/assets/js/65.65992e0a.js"><link rel="prefetch" href="/assets/js/66.21c3476a.js"><link rel="prefetch" href="/assets/js/67.00ecd1b2.js"><link rel="prefetch" href="/assets/js/68.e2193fda.js"><link rel="prefetch" href="/assets/js/69.b25922fd.js"><link rel="prefetch" href="/assets/js/7.a4e5f693.js"><link rel="prefetch" href="/assets/js/70.7df33e8b.js"><link rel="prefetch" href="/assets/js/71.4fb66dab.js"><link rel="prefetch" href="/assets/js/72.7c3496ca.js"><link rel="prefetch" href="/assets/js/73.f8b12565.js"><link rel="prefetch" href="/assets/js/74.5593515c.js"><link rel="prefetch" href="/assets/js/75.3eae286e.js"><link rel="prefetch" href="/assets/js/76.fb25ef39.js"><link rel="prefetch" href="/assets/js/77.813550b2.js"><link rel="prefetch" href="/assets/js/78.51eb779c.js"><link rel="prefetch" href="/assets/js/79.28e4c211.js"><link rel="prefetch" href="/assets/js/8.a1d1eaae.js"><link rel="prefetch" href="/assets/js/80.0a1fb12c.js"><link rel="prefetch" href="/assets/js/81.e43c02ad.js"><link rel="prefetch" href="/assets/js/82.8a898019.js"><link rel="prefetch" href="/assets/js/83.62824370.js"><link rel="prefetch" href="/assets/js/84.ddd27bab.js"><link rel="prefetch" href="/assets/js/85.ea498587.js"><link rel="prefetch" href="/assets/js/86.30c2820e.js"><link rel="prefetch" href="/assets/js/87.32c6b5a6.js"><link rel="prefetch" href="/assets/js/88.9362530e.js"><link rel="prefetch" href="/assets/js/89.422471a1.js"><link rel="prefetch" href="/assets/js/9.63cc4b00.js"><link rel="prefetch" href="/assets/js/90.4c3c1a89.js"><link rel="prefetch" href="/assets/js/91.6f4683a0.js"><link rel="prefetch" href="/assets/js/92.2bc430f5.js"><link rel="prefetch" href="/assets/js/93.fb8b7075.js"><link rel="prefetch" href="/assets/js/94.68644683.js"><link rel="prefetch" href="/assets/js/95.46d879ff.js"><link rel="prefetch" href="/assets/js/96.dd948d11.js"><link rel="prefetch" href="/assets/js/97.88aef29a.js"><link rel="prefetch" href="/assets/js/98.f101fa6e.js"><link rel="prefetch" href="/assets/js/99.149731a7.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.6442aeab.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/avatar.png" alt="chenglun17 blog" class="logo"> <span class="site-name can-hide">chenglun17 blog </span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  快速了解
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cs/DS/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/cs/OS/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/cs/CN/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/cs/CO/" class="nav-link">
+  计算机组成原理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/troika/html_css_study/" class="nav-link">
+  HTML/CSS
+</a></li><li class="dropdown-item"><!----> <a href="/troika/js_study/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/troika/WebAPI_Interface/" class="nav-link">
+  Web API 接口
+</a></li><li class="dropdown-item"><!----> <a href="/troika/various_functions/" class="nav-link">
+  各种功能
+</a></li><li class="dropdown-item"><!----> <a href="/troika/promise_study/" class="nav-link">
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/troika/ajax_study/" class="nav-link">
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/troika/axios_study/" class="nav-link">
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/troika/TypeScript_Study/" class="nav-link">
+  TypeScript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web前端" class="dropdown-title"><span class="title">Web前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web前端" class="mobile-dropdown-title"><span class="title">Web前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frame/vue_study/" class="nav-link">
+  Vue2.x
+</a></li><li class="dropdown-item"><!----> <a href="/frame/vue3_study/" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/frame/VueInterview/" class="nav-link">
+  Vue面试相关
+</a></li><li class="dropdown-item"><!----> <a href="/frame/react_study/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frame/Bootstrap_study/" class="nav-link">
+  Bootstrap
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他学习" class="dropdown-title"><span class="title">其他学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他学习" class="mobile-dropdown-title"><span class="title">其他学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/others/nodejs_study/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/others/webpack_study/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/others/babel_study/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-item"><!----> <a href="/others/git_study/" class="nav-link router-link-active">
+  Git/Tortoisegit
+</a></li><li class="dropdown-item"><!----> <a href="/others/regex_study/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="移动端" class="dropdown-title"><span class="title">移动端</span> <span class="arrow down"></span></button> <button type="button" aria-label="移动端" class="mobile-dropdown-title"><span class="title">移动端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mobile/miniprogram_study/" class="nav-link">
+  小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/uni-app_study/" class="nav-link">
+  uni-app
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java后端" class="dropdown-title"><span class="title">Java后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java后端" class="mobile-dropdown-title"><span class="title">Java后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/java_core/" class="nav-link">
+  Java核心基础
+</a></li><li class="dropdown-item"><!----> <a href="/java/sql_study/" class="nav-link">
+  SQL/MySQL
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/chenglun17" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  快速了解
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="计算机基础" class="dropdown-title"><span class="title">计算机基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="计算机基础" class="mobile-dropdown-title"><span class="title">计算机基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cs/DS/" class="nav-link">
+  数据结构
+</a></li><li class="dropdown-item"><!----> <a href="/cs/OS/" class="nav-link">
+  操作系统
+</a></li><li class="dropdown-item"><!----> <a href="/cs/CN/" class="nav-link">
+  计算机网络
+</a></li><li class="dropdown-item"><!----> <a href="/cs/CO/" class="nav-link">
+  计算机组成原理
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端基础" class="dropdown-title"><span class="title">前端基础</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端基础" class="mobile-dropdown-title"><span class="title">前端基础</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/troika/html_css_study/" class="nav-link">
+  HTML/CSS
+</a></li><li class="dropdown-item"><!----> <a href="/troika/js_study/" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/troika/WebAPI_Interface/" class="nav-link">
+  Web API 接口
+</a></li><li class="dropdown-item"><!----> <a href="/troika/various_functions/" class="nav-link">
+  各种功能
+</a></li><li class="dropdown-item"><!----> <a href="/troika/promise_study/" class="nav-link">
+  Promise
+</a></li><li class="dropdown-item"><!----> <a href="/troika/ajax_study/" class="nav-link">
+  Ajax
+</a></li><li class="dropdown-item"><!----> <a href="/troika/axios_study/" class="nav-link">
+  Axios
+</a></li><li class="dropdown-item"><!----> <a href="/troika/TypeScript_Study/" class="nav-link">
+  TypeScript
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Web前端" class="dropdown-title"><span class="title">Web前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Web前端" class="mobile-dropdown-title"><span class="title">Web前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/frame/vue_study/" class="nav-link">
+  Vue2.x
+</a></li><li class="dropdown-item"><!----> <a href="/frame/vue3_study/" class="nav-link">
+  Vue3
+</a></li><li class="dropdown-item"><!----> <a href="/frame/VueInterview/" class="nav-link">
+  Vue面试相关
+</a></li><li class="dropdown-item"><!----> <a href="/frame/react_study/" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/frame/Bootstrap_study/" class="nav-link">
+  Bootstrap
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他学习" class="dropdown-title"><span class="title">其他学习</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他学习" class="mobile-dropdown-title"><span class="title">其他学习</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/others/nodejs_study/" class="nav-link">
+  Nodejs
+</a></li><li class="dropdown-item"><!----> <a href="/others/webpack_study/" class="nav-link">
+  Webpack
+</a></li><li class="dropdown-item"><!----> <a href="/others/babel_study/" class="nav-link">
+  Babel
+</a></li><li class="dropdown-item"><!----> <a href="/others/git_study/" class="nav-link router-link-active">
+  Git/Tortoisegit
+</a></li><li class="dropdown-item"><!----> <a href="/others/regex_study/" class="nav-link">
+  正则表达式
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="移动端" class="dropdown-title"><span class="title">移动端</span> <span class="arrow down"></span></button> <button type="button" aria-label="移动端" class="mobile-dropdown-title"><span class="title">移动端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/mobile/miniprogram_study/" class="nav-link">
+  小程序学习
+</a></li><li class="dropdown-item"><!----> <a href="/mobile/uni-app_study/" class="nav-link">
+  uni-app
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Java后端" class="dropdown-title"><span class="title">Java后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="Java后端" class="mobile-dropdown-title"><span class="title">Java后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/java/java_core/" class="nav-link">
+  Java核心基础
+</a></li><li class="dropdown-item"><!----> <a href="/java/sql_study/" class="nav-link">
+  SQL/MySQL
+</a></li></ul></div></div><div class="nav-item"><a href="https://github.com/chenglun17" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/others/nodejs_study/" class="sidebar-heading clickable"><span>Nodejs 学习</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/others/webpack_study/" class="sidebar-heading clickable"><span>Webpack 学习</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/others/babel_study/" class="sidebar-heading clickable"><span>Babel 学习</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/others/git_study/" class="sidebar-heading clickable router-link-active open"><span>Git 学习</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/others/git_study/GitIntro.html" aria-current="page" class="active sidebar-link">一、Git基础概念</a></li><li><a href="/others/git_study/GitBasicUse.html" class="sidebar-link">二、基本使用</a></li><li><a href="/others/git_study/OperationProcess.html" class="sidebar-link">三、基础操作流程</a></li><li><a href="/others/git_study/Problem.html" class="sidebar-link">四、疑难杂症</a></li><li><a href="/others/git_study/Interview.html" class="sidebar-link">五、面试题</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/others/regex_study/" class="sidebar-heading clickable"><span>RegExp 学习</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="一、git基础概念"><a href="#一、git基础概念" class="header-anchor">#</a> 一、Git基础概念</h1> <p>Git 是一个免费的，开源的分布式版本控制软件系统</p> <p><strong>1.版本控制</strong></p> <p>一般情况下，一份文件，无论是DOC办公文档，还是编程源码文件，我们都会对文件进行大量的修改和变更。但是我们无法保证每一次的修改和变更都是正确并有效的，往往有的时候需要追溯历史操作。</p> <p>而版本控制（Revision control）是一种在开发的过程中用于管理我们对文件、目录或工程等内容的修改历史，方便查看更改历史记录，备份以便恢复以前的版本的软件工程技术。</p> <p>没有进行版本控制或者版本控制本身缺乏正确的流程管理，在软件开发过程中将会引入很多问题，如软件代码的一致性、软件内容的冗余、软件过程的事物性、软件开发过程中的并发性、软件源代码的安全性，以及软件的整合等问题。</p> <p><strong>2.分布式</strong></p> <p>在 Git 中，每个版本库都是一样重要得。所以就不存在像集中式版本控制软件中以谁为主得问题。任何一个库都可以当成主库。</p> <p>这种方式可以更大限度地保证项目资源得安全。</p> <p><strong>3.系统</strong></p> <p>一般软件系统指的是可以独立运行的软件应用程序。而 Git 软件就是专门用于对代码文件进行版本控制得应用程序。同时也提供客户端对系统所管理得资源进行访问。</p> <p><strong>4.区域</strong></p> <p>Git 软件为了更方便地对文件进行版本控制，根据功能得不同划分了三个区域</p> <ul><li><strong>工作区（Working Directory)</strong>：存放项目代码的地方；</li> <li><strong>缓存区（Index / Stage）</strong>：也称为<strong>暂存区</strong>，用于临时存放改动过的代码和文件，保存即将提交到文件列表信息；</li> <li><strong>版本库（Repository)</strong>：工作区下隐藏文件夹<code>.git</code>；</li> <li><strong>本地仓库（History / Local Repository）</strong>：也称为仓库区，安全存放数据和代码的位置，这里面有所有提交代码的版本数据，其中HEAD指向最新放入仓库的版本；</li> <li><strong>远程仓库（Remote Directory/Remote Repository）</strong>：也称为远端仓库或者远端、远程，是托管代码的服务器，github/gitee这些就是我们熟知的远程仓库；</li></ul> <p><strong>5.文件状态</strong>（刚刚添加到项目中的文件处于未跟踪状态）</p> <ol><li>未跟踪（untracked）</li> <li>已修改（modified）：修改了文件，但还没保存到数据库中</li> <li>已暂存（staged）：对一个已修改文件做了标记，将在下次提交中包含此文件，对应命令为 <code>git add</code></li> <li>已提交（committed）：数据已经保存在本地数据库中，对应命令为 <code>git commit</code></li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">6/28/2023, 3:06:29 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/others/babel_study/Base.html" class="prev">
+        Babel
+      </a></span> <span class="next"><a href="/others/git_study/GitBasicUse.html">
+        二、基本使用
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/assets/js/app.b68f363e.js" defer></script><script src="/assets/js/3.eca41826.js" defer></script><script src="/assets/js/109.996cb14e.js" defer></script>
+  </body>
+</html>
